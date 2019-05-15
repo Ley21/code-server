@@ -4,7 +4,8 @@ FROM microsoft/dotnet:sdk
 RUN apt-get update && apt-get install -y \
 	libxkbfile-dev \
 	libsecret-1-dev \
-	nodejs
+	nodejs \
+	build-essential
 
 # Ensure latest yarn.
 RUN npm install -g yarn@1.13
